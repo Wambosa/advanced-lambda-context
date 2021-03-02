@@ -24,6 +24,7 @@ module.exports = (option = { }) => {
         }
       })
 
+      // todo: support local in memory cache optionally
       context.expandParamStoreVariables = async function (ignorables = ['ssmEndpoint']) {
         let envVarNames = Object.keys(context.var)
         let ssmParams = envVarNames.filter(name => name.substr(0, 3) === 'ssm' && !ignorables.includes(name))
