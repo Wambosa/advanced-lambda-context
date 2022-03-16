@@ -10,6 +10,7 @@ module.exports = {
   AwsService: {
     s3: require('./service/s3'),
     sns: require('./service/sns'),
+    sqs: require('./service/sqs'),
     ssm: require('./service/ssm'),
     dynamo: require('./service/dynamo'),
     wsApiGateway: require('./service/wsApiGateway'),
