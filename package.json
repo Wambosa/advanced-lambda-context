@@ -1,6 +1,6 @@
 {
   "name": "advanced-lambda-context",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A flexible wrapper function for various common lambda use-cases.",
   "engines": {
     "node": ">=14.19.0"
