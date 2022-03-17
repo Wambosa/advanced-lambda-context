@@ -54,7 +54,7 @@ describe('GIVEN a valid package.json file', () => {
       let packageJson = vars.packages('./package.json')
 
       expect(packageJson.name).toEqual('advanced-lambda-context')
-      expect(packageJson.main).toBeDefined()
+      expect(packageJson.exports).toBeDefined()
       expect(packageJson.version).toBeDefined()
       expect(packageJson.engines).toBeDefined()
       expect(packageJson.description).toBeDefined()
