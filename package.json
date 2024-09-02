@@ -1,9 +1,9 @@
 {
   "name": "advanced-lambda-context",
-  "version": "1.2.12",
+  "version": "2.0.0",
   "description": "A flexible wrapper function for various common lambda use-cases.",
   "engines": {
-    "node": ">=14.19.0"
+    "node": ">=18.17.0"
   },
   "main": "./index.js",
   "module": "./esm/index.js",
@@ -24,9 +24,10 @@
       "require": "./with/logger/bunyan.js",
       "import": "./with/logger/bunyan.mjs"
     },
-    "./with/database": "./with/database/database.mjs",
-    "./with/database/mysql": "./with/database/serverless-mysql.js",
-    "./with/database/dataApi": "./with/database/data-api.js",
+    "./with/database": {
+      "require": "./with/database/database.js",
+      "import": "./with/database/database.mjs"
+    },
     "./package.json": "./package.json"
   },
   "repository": {
@@ -43,7 +44,7 @@
   },
   "devDependencies": {
     "aws-sdk": "^2.1094.0",
-    "axios": "^0.26.1",
+    "axios": "^1.7.7",
     "bunyan": "^1.8.12",
     "bunyan-prettystream-circularsafe": "^0.3.1",
     "c8": "^7.3.1",
@@ -54,7 +55,7 @@
     "walk-sync": "^2.0.2"
   },
   "peerDependencies": {
-    "axios": "^0.21.0",
+    "axios": "^1.7.7",
     "bunyan": "^1.8.12",
     "bunyan-prettystream-circularsafe": "^0.3.1",
     "serverless-mysql": "^1.5.4",

@@ -16,12 +16,12 @@ npm install bunyan-prettystream-circularsafe --no-save
   - [ ] generate docs
   - [ ] publish script
   - [ ] support alternate serialized config (only supports yml)
-  - [ ] consider writting in google cloud version
-  - [ ] consider azure version
+  - [x] ~~consider writting in google cloud version~~
+  - [x] ~~consider azure version~~
   - [ ] include event schemas
   - [ ] write other event parsers as needed
     - [ ] sqs
     - [ ] sns -> sqs
   - [ ] write unit test for ssm.expandParamStoreVariables
-  - [ ] unhappy path unit test for snsn event parse
+  - [ ] unhappy path unit test for sns event parse
   - [ ] unit tests for 3rd party peer dependencies
