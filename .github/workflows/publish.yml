@@ -16,11 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: chrislennon/action-aws-cli@v1.1
-      env:
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v3
       with:
         node-version: 18.17.0
         cache: npm
