@@ -35,8 +35,7 @@
     "url": "https://github.com/wambosa/advanced-lambda-context"
   },
   "scripts": {
-    "test": "c8 --exclude **/spec/** --reports-dir ./.build/ jasmine",
-    "lint": "eslint -c ./config/.eslintrc.yml src"
+    "test": "c8 --exclude **/spec/** --reports-dir ./.build/ jasmine"
   },
   "dependencies": {
     "argparse": "^1.0.10",
