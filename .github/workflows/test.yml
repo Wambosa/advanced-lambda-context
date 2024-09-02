@@ -16,5 +16,8 @@ jobs:
         node-version: 18.17.0
         cache: npm
 
+    - name: Dependencies
+      run: make install
+
     - name: Unit Tests
       run: make test

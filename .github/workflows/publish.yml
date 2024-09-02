@@ -21,6 +21,9 @@ jobs:
         node-version: 18.17.0
         cache: npm
 
-      - uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+    - name: Dependencies
+      run: make install
+
+    - uses: JS-DevTools/npm-publish@v3
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
