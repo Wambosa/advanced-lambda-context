@@ -8,8 +8,8 @@ describe('GIVEN common environment variables', () => {
       expect(envVars.path).toBeDefined()
     })
 
-    it('THEN expect NODE_PATH toBe present', () => {
-      expect(envVars.nodePath).toBeDefined()
+    it('THEN expect NVM_DIR toBe present', () => {
+      expect(envVars.nvmDir).toBeDefined()
     })
   })
 })
