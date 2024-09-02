@@ -35,7 +35,7 @@
     "url": "https://github.com/wambosa/advanced-lambda-context"
   },
   "scripts": {
-    "test": "c8 --exclude **/spec/** --reports-dir ./.build/ jasmine"
+    "test": "npx c8 --exclude **/spec/** --reports-dir ./.build/ jasmine"
   },
   "dependencies": {
     "argparse": "^1.0.10",
